@@ -8,6 +8,10 @@
 export default {
   name: 'App',
   components: {
+  },
+  mounted() {
+    let a = "";
+    console.log(a)
   }
 }
 </script>
