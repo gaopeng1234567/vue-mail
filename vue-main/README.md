@@ -48,3 +48,13 @@ Cookie会发送到服务器端，存储在内存中，Storage只存储在浏览�
 路径：Cookie有路径限制，Storage只存储在域名下
 API：Cookies没有特定API，Storage有对应API
 ```
+
+### Mock设置
+* 开发阶段为了提高效率，需要提前mock
+* 减少代码冗余，灵活插拔
+* 减少沟通、减少接口联调时间
+```
+本地创建json
+easy-mock平台、yapi
+集成Mock API
+```

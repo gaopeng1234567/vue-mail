@@ -5,8 +5,13 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import env from './env'
 
+const mock = true;
+if (mock){
+  require('./mock/api')// 需要加载的时候才加载，而import是在预编译阶段就加载好了
+}
 axios.defaults.baseURL = env.baseURL; // 配置跨域，在代理中已经添加了 /a/b : /api/a/b => /a/b
 axios.defaults.timeout = 8000; //超时配置8S
+axios.defaults.baseURL = '/api';
 
 // Add a request interceptor
 axios.interceptors.request.use(function (config) {

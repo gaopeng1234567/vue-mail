@@ -5,24 +5,22 @@
 </template>
 
 <script>
-import storage from './storage'
+// import storage from './storage'
 export default {
   name: 'App',
   components: {
   },
+  data(){
+    return {
+      res: {}
+    }
+  },
   mounted() {
-    storage.setItem('1')
+   
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import './assets/scss/reset.scss'
 </style>
